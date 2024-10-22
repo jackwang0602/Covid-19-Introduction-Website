@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v12.0" nonce="2XBqhZRL"></script>
+<meta charset="utf-8">
+<style> 
+body {
+                background-color: #9CD4DE; /****************改顏色***********/
+            }
+   .flex{
+	display:flex;
+    justify-content: center;
+    align-content:center;
+    flex-wrap:wrap; 
+    }
+    #container{
+	width:100%;
+           background-color: #EEEAEA;
+    }
+    h1{margin-left: 40px;
+    }
+    p{margin-left: 40px;
+    font-size:1.3em;}
+
+    .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;border-style:solid;border-width:1px;margin:10px 10px 10px 40px;}
+    .tg td{background-color:#EBF5FF;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#444;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg th{background-color:#409cff;border-color:#9ABAD9;border-style:solid;border-width:0px;color:#fff;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+    .tg .tg-hjji{font-size:24px;text-align:center;vertical-align:top;font-weight:bold}
+    .tg .tg-b4to{border-color:inherit;font-size:24px;font-weight:bold;text-align:center;vertical-align:top}
+    .tg .tg-baqh{text-align:center;vertical-align:top}
+    .tg .tg-bzci{font-size:20px;text-align:center;vertical-align:top}
+    .tg .tg-zr08{border-color:inherit;font-size:20px;font-style:italic;text-align:center;vertical-align:top}
+    .tg .tg-p8sp{border-color:inherit;font-size:20px;text-align:center;vertical-align:top}
+  footer{
+			margin-top:-25px;
+			margin-bottom:-25px;
+                width: 100%;
+				background-color:#8BCC66;
+            }
+</style>
+<link rel="stylesheet" href="style/nav主選單_style.css">
+<link rel="stylesheet" href="style/backToTop.css">
+</head>
+<body>
+<header><img alt="Covid-19 進行式" height="100px" src="img/logo.png" width="233px" /></header>
+<nav>
+    <ul class="flex_nav">
+        <li><a href="index.html">首頁</a></li>
+        <li><a href="疫苗種類.html">疫苗種類</a></li>
+        <li><a href="症狀.html">症狀介紹</a></li>
+        <li><a href="統計確診.html">確診統計</a></li>
+        <li>
+	    <a href="#">常見問題</a>
+	    <ul>
+	    	<li><a href="常見問題/有人確診怎麼辦.html">有人確診怎麼辦</a></li>
+           	<li><a href="常見問題/預防接種受害救濟管道.html">預防接種受害救濟管道</a></li>
+            <li><a href="常見問題/病毒介紹.html">病毒介紹</a></li>
+	    </ul>
+        </li>
+    </ul>
+</nav>
+
+<main style="background-color:#B3E6CF; max-width: 100%;" >
+    <h1>疫苗介紹</h1>
+    <p>台灣使用的疫苗或許品項不同，不同疫苗的生效方式及效果、副作用頻率也略有不同，就由以下的圖表來介紹我們台灣目前擁有的四種疫苗:</p>
+    <table class="tg">
+        <thead>
+          <tr>
+            <th class="tg-b4to">疫苗品名</th>
+            <th class="tg-b4to">國內核准使用年齡</th>
+            <th class="tg-b4to">常見副作用</th>
+            <th class="tg-b4to">接種劑量</th>
+            <th class="tg-b4to">接種間隔<br>(ACIP建議)</th>
+            <th class="tg-hjji">疫苗種類</th>
+            <th class="tg-hjji">疫苗外觀</th>
+            <th class="tg-baqh"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr id="b">
+            <td class="tg-zr08">BioNTech<br>(BNT)</td>
+            <td class="tg-p8sp">12歲以上</td>
+            <td class="tg-p8sp">嘔吐、接種部<br>位產稱硬塊</td>
+            <td class="tg-p8sp">2劑</td>
+            <td class="tg-p8sp">至少28天</td>
+            <td class="tg-bzci">mRNA</td>
+            <td class="tg-bzci">白色~微白色</td>
+            <td class="tg-baqh"><img src="img/BNT.jpg" width="200" height="150"></td>
+          </tr>
+          <tr id="a">
+            <td class="tg-zr08">AstraZeneca<br>(AZ)</td>
+            <td class="tg-p8sp">18歲以上</td>
+            <td class="tg-p8sp">接種部位膨脹<br>、泛紅、噁心</td>
+            <td class="tg-p8sp">2劑</td>
+            <td class="tg-p8sp">至少8週以上</td>
+            <td class="tg-bzci">腺病毒載體</td>
+            <td class="tg-bzci">無色~微棕色</td>
+            <td class="tg-baqh"><img src="img/AZ.jpg" width="200" height="150"></td>
+          </tr>
+          <tr id="m">
+            <td class="tg-zr08">Moderna<br>(莫德納)</td>
+            <td class="tg-p8sp">12歲以上</td>
+            <td class="tg-p8sp">接種部位紅斑<br>、泛紅</td>
+            <td class="tg-p8sp">2劑</td>
+            <td class="tg-p8sp">至少28天</td>
+            <td class="tg-bzci">mRNA</td>
+            <td class="tg-bzci">白色~微白色</td>
+            <td class="tg-baqh"><img src="img/Moderna.jpeg" alt="Image" width="200" height="150"></td>
+          </tr>
+          <tr id="g">
+            <td class="tg-zr08">高端</td>
+            <td class="tg-p8sp">20歲以上</td>
+            <td class="tg-p8sp">無</td>
+            <td class="tg-p8sp">2劑</td>
+            <td class="tg-p8sp">間隔為28天</td>
+            <td class="tg-bzci">蛋白質次單元疫苗</td>
+            <td class="tg-bzci">無色</td>
+            <td class="tg-baqh"><img src="img/MVC.jpg" width="200" height="150"></td>
+          </tr>
+        </tbody>
+    </table>
+
+
+
+
+    
+    <h2 style="margin-left:40px"><span style="color:red">補充</span>:疫苗種類介紹</h2>
+    <p style="margin-left:40px">對於不了解疫苗種類的人，來這裡就對了，目前主要有4種不同種類的新冠疫苗，製造技術各有不同:</p>
+    <ul style="margin-left:40px">
+        <li>
+            <article>
+                <h3>mRNA（信使RNA）疫苗莫德納（Moderna）、輝瑞／BNT疫苗</h3>
+                <p>mRNA疫苗會將能製造新冠病毒表面棘狀蛋白的mRNA送至人體細胞，並製造棘狀蛋白，藉此<br>驅動免疫系統攻擊與記憶此類病毒蛋白，產生對新冠病毒的免疫力
+                </p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3>蛋白質次單元疫苗:高端、聯亞</h3>
+                <p>
+                    利用基因重組技術製作出病毒表面棘狀蛋白，做成疫苗打入人體，讓免疫系統產生免疫<br>反應
+                </p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3>病毒載體疫苗-線病毒疫苗:AZ</h3>
+                <p>
+                    將一段製造病毒表面棘狀蛋白的DNA放入無毒性的腺病毒中，最後將之遞送至人體細胞<br>，誘發免疫反應
+                </p>
+            </article>
+        </li>
+        <li>
+            <article>
+                <h3>全病毒疫苗:中國科興</h3>
+                <p>
+                    用較傳統的方式製作，採用失去活性死毒疫苗及降低病毒活性後的減毒疫苗刺激人體免<br>疫系統。(因為台灣沒有引入此疫苗，因此不納入疫苗介紹的廢籌)
+                </p>
+            </article>
+        </li>
+    </ul>
+	<span style="font-size:10px;"><p>資料來源<br>
+https://www.cdc.gov.tw/File/Get/2s-x_8SK42E9pxLGUpF5Jg<br>
+https://www.cgmh.org.tw/cgmn/category.asp?id_seq=2103011#.Yc1Gw2BByUl<br>
+https://www.edh.tw/article/27404</p>
+</main>
+
+
+
+
+
+
+
+<hr>
+
+<footer>
+    <div class="fb_like">
+   <div class="fb_like">
+           <div class="fb-like" data-href="http://algo.nttu.edu.tw/1101ITWWW/10914147/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+        </div>
+    </div>
+	<br>
+    <h1 style="text-align: center;"><span style="font-size:16px;">Designed by: 潘辰佑、王碩均</span><span style="font-size: 16px; text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size:16px;">相關連結:</span></h1>
+
+    <p style="text-align: center;"><span style="font-size:16px;">聯絡信箱:10914147@gm.nttu.edu.tw&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<a href="https://www.mohw.gov.tw/mp-1.html" target="_blank">衛服部官網</a></span></p>
+    
+    <p style="text-align: center;"><span style="font-size:16px;">聯絡電話:0905510841</span><span style="font-size: 16px; text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size:16px;"><a href="https://www.cdc.gov.tw/" target="_blank">衛服部疾管署官網</a></span></p>
+    
+    <p style="text-align: center;"><span style="font-size:12px;"><span style="color:#D3D3D3;">免責聲明: 本網站僅供參考，實際疫情資訊以「衛生福利部疾病管制署」公告為準</span></span></p>
+<br><br>
+</footer>
+
+<button class="js-back-to-top back-to-top" title="回到頭部">&#65085;</button>
+
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<script>
+
+$(function () {
+
+var $win = $(window);
+
+var $backToTop = $('.js-back-to-top');
+
+// 當用戶滾動到離頂部100像素時，展示回到頂部按鈕
+
+$win.scroll(function () {
+
+if ($win.scrollTop() > 100) {
+
+$backToTop.show();
+
+} else {
+
+$backToTop.hide();
+
+}
+
+});
+
+// 當用戶點擊按鈕時，通過動畫效果返回頭部
+
+$backToTop.click(function () {
+
+$('html, body').animate({scrollTop: 0}, 200);
+
+});
+
+});
+
+</script>
+
+
+</body>
+</html>

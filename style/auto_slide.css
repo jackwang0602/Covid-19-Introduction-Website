@@ -1,0 +1,73 @@
+.slider_container {
+    margin: 30px auto;
+    width: 1000px;
+    height: 400px;
+    position: relative;
+    border: 20px solid;
+    border-color: #fff;
+    box-shadow: #666 0 0 50px;
+    }
+    
+    .slider_container div {
+    position: absolute;
+    top: 15;
+    left: 50;
+    opacity: 0;
+    filter: alpha(opacity=100);
+    }
+    
+    .slider_container div {
+    -webkit-animation: round 4s linear infinite;
+    animation: round 4s linear infinite;
+    }
+    
+    @-webkit-keyframes round {
+    25% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    }
+    50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    }
+    75% {
+    opacity: 0;
+    filter: alpha(opacity=100);
+    /* 5-6秒淡出*/
+    }
+    }
+    @keyframes round {
+        25% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 0 - 1秒 淡入*/
+    }
+    50% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 1- 5秒靜止*/
+    }
+    75% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    /* 5-6秒淡出*/
+    }
+    }
+    
+    .slider_container div:nth-child(2) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    }
+    
+    .slider_container div:nth-child(1) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    }
+    
+    .slider_container:hover div {
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    }
+    
